@@ -7,8 +7,8 @@
 }
 :root {
   --color1: #190482;
-  --color2: #7752FE;
-  --color3: #8E8FFA;
+  --color2: #7752fe;
+  --color3: #8e8ffa;
   --color4: #ffffff;
   --color5: #000;
 }
@@ -83,7 +83,7 @@ html::-webkit-scrollbar-thumb {
   gap: 25px;
   margin-top: 50px;
 }
-.heroLeft  .button {
+.heroLeft .button {
   text-transform: uppercase;
   background-color: var(--color1);
   color: var(--color4);
@@ -138,6 +138,14 @@ html::-webkit-scrollbar-thumb {
 .section-02 {
   background-color: var(--color4);
 }
+.section-02 h1 {
+  padding-top: 100px;
+  height: 50px;
+  text-align: center;
+  color: var(--color2);
+  font-size: 50px;
+  font-weight: 900;
+}
 .imagechange {
   display: flex;
   justify-content: space-around;
@@ -148,8 +156,10 @@ html::-webkit-scrollbar-thumb {
   object-fit: cover;
   object-position: bottom;
   border-radius: 20px;
-  box-shadow: 0 48px 48px -32px rgba(0, 0, 0, 0.2),
-    0 96px 96px -64px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.imagechange button {
+  width: 100%;
 }
 .imagechange .leftbuttons,
 .rightbuttons {
@@ -298,9 +308,9 @@ html::-webkit-scrollbar-thumb {
 /* <--------------------------------Section 05 --------------------------> */
 .section-05 {
   height: 90vh;
-  background: url(../images/outro.png);
+  background: url(../images/outro.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
 }
 .outro {
@@ -337,8 +347,7 @@ html::-webkit-scrollbar-thumb {
   .section-02 {
     background-color: var(--color4);
   }
-  .imagechange img
-  {
+  .imagechange img {
     height: 100%;
     width: 100%;
   }
@@ -359,9 +368,9 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
   }
-  .horizontalButtons .button
-  {
-    font-size: 25px;
+  .horizontalButtons .button {
+    font-size: 15px;
+    width: 300px;
   }
   /* <--------------------------------Section 03 --------------------------> */
   .section-03 {
@@ -411,6 +420,29 @@ html::-webkit-scrollbar-thumb {
     /* overflow: hidden; */
     line-height: 0;
     transform: rotate(360deg);
+  }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 500px;
+    padding: 15px 35px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
   }
   /* <--------------------------------Section 05 --------------------------> */
   .outro h1 {
@@ -630,9 +662,8 @@ html::-webkit-scrollbar-thumb {
     gap: 25px;
     background-color: var(--color3);
   }
-  .section-04 .map {
-    height: 400px;
-    width: 400px;
+  .section-04 iframe {
+    width: 100%;
   }
   .section-04 h1 {
     text-transform: uppercase;
@@ -763,9 +794,8 @@ html::-webkit-scrollbar-thumb {
     gap: 25px;
     background-color: var(--color3);
   }
-  .section-04 .map {
-    height: 300px;
-    width: 300px;
+  .section-04 iframe {
+    width: 100%;
   }
   .section-04 h1 {
     text-transform: uppercase;
@@ -797,6 +827,10 @@ html::-webkit-scrollbar-thumb {
     transform: rotate(360deg);
   }
   /* <--------------------------------Section05-------------------------->  */
+  .section-05 {
+    object-fit: contain;
+    object-position: left;
+  }
   .outro h1 {
     color: var(--color4);
     font-size: 50px;
