@@ -1,0 +1,1048 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --color1: #190482;
+  --color2: #7752fe;
+  --color3: #8e8ffa;
+  --color4: #ffffff;
+  --color5: #000;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 80px;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--color1);
+  border-radius: 5rem;
+}
+::selection {
+  color: var(--color4);
+  background-color: var(--color3);
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* <--------------------------------Section 01 --------------------------> */
+.section-01 {
+  background: linear-gradient(
+    300deg,
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation 4.5s ease infinite;
+}
+.herodiv {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.heroLeft h1 {
+  color: var(--color4);
+  font-size: 103px;
+  font-weight: 900;
+}
+.heroLeft p {
+  color: var(--color4);
+  font-size: 27px;
+  font-weight: 900;
+}
+.heroLeft .buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+}
+.heroLeft .button {
+  text-transform: uppercase;
+  background-color: var(--color1);
+  color: var(--color4);
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: scale 0.2 ease;
+}
+.heroLeft .button:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+  scale: 1.05;
+}
+.heroLeft .button:active {
+  scale: 0.95;
+}
+.heroLeft .button i {
+  font: 15px;
+}
+.button {
+  text-transform: uppercase;
+  background-color: var(--color4);
+  color: var(--color5);
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: scale 0.2 ease;
+}
+.button:hover {
+  background-color: var(--color1);
+  color: #ffffff;
+  scale: 1.05;
+}
+.button:active {
+  scale: 0.95;
+}
+.button i {
+  font: 15px;
+}
+
+/* <--------------------------------Section 02 --------------------------> */
+.section-02 {
+  background-color: var(--color4);
+}
+.section-02 h1 {
+  padding-top: 100px;
+  height: 50px;
+  text-align: center;
+  color: var(--color2);
+  font-size: 60px;
+  font-weight: 900;
+}
+.imagechange {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.imagechange img {
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.imagechange button {
+  width: 100%;
+}
+.imagechange .leftbuttons,
+.rightbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+.horizontalButtons {
+  display: none;
+}
+/* <--------------------------------Section 03 --------------------------> */
+.section-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120vh;
+  background-color: var(--color4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cardsection {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.cardsection h1 {
+  text-align: center;
+  color: var(--color3);
+  font-size: 50px;
+  font-weight: 900;
+}
+.cardsection p {
+  font-size: 27px;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cardcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+.cardcontainer .card {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* <--------------------------------Section 04 --------------------------> */
+.section-04 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 25px;
+  background-color: var(--color3);
+}
+.section-04 h1 {
+  text-transform: uppercase;
+  /* margin-bottom: 100px; */
+  /* margin-top: 50px; */
+  color: var(--color4);
+  font-size: 40px;
+  font-weight: 900;
+}
+.section-04 h1 span {
+  color: var(--color2);
+}
+.contactSection {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.form-container .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.form-container form {
+  display: flex;
+  width: 100%;
+  /* height: 100%; */
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 70px;
+  text-align: center;
+}
+.form-container form h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+.form-container form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: var(--color1);
+  border: 0.1px solid var(--color3);
+}
+.form-container form .inputBox i {
+  color: #fff;
+  font-size: 15px;
+  padding-left: 15px;
+}
+.form-container form .inputBox input {
+  width: 100%;
+  padding: 15px 35px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  margin-left: 15px;
+}
+.custom-shape-divider-bottom-1708112799 {
+  position: absolute;
+  top: 80vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden; */
+  line-height: 0;
+  transform: rotate(360deg);
+}
+
+.custom-shape-divider-bottom-1708112799 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 116px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1708112799 .shape-fill {
+  fill: var(--color3);
+}
+/* <--------------------------------Section 05 --------------------------> */
+.section-05 {
+  height: 90vh;
+  background: url(../images/outro.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  gap: 25px;
+}
+.outro h1 {
+  color: var(--color4);
+  font-size: 70px;
+  font-weight: 900;
+}
+/* <--------------------------------About section --------------------------> */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 100px;
+}
+.about .heading {
+  color: var(--color2);
+  font-size: 60px;
+  font-weight: 900;
+}
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  background: var(--color2);
+}
+.aboutSection .aboutRight {
+  padding: 0;
+  color: var(--color4);
+  text-align: left;
+}
+.aboutSection .aboutLeft img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.aboutSection .aboutRight h1 {
+  margin-bottom: 20px;
+  padding: 0 18px;
+}
+.aboutSection .aboutRight p {
+  margin-bottom: 25px;
+  padding: 0 18px;
+}
+.aboutSection .aboutLeft,
+.aboutRight {
+  max-width: 600px;
+}
+/* <--------------------------------Media queries --------------------------> */
+
+@media (max-width: 1024px) {
+  /* <--------------------------------section 01 --------------------------> */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+  .heroLeft .buttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  /* <--------------------------------section 02 --------------------------> */
+  .section-02 {
+    background-color: var(--color4);
+  }
+  .imagechange img {
+    height: 100%;
+    width: 100%;
+  }
+  .imagechange {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+  }
+  .imagechange .leftbuttons .button,
+  .rightbuttons .button {
+    display: none;
+  }
+  .horizontalButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .horizontalButtons .button {
+    font-size: 15px;
+    width: 300px;
+  }
+  /* <--------------------------------Section 03 --------------------------> */
+  .section-03 {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cardcontainer .card {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* <--------------------------------Section 04 --------------------------> */
+  .section-04 {
+    height: 100%;
+    gap: 25px;
+    background-color: var(--color3);
+  }
+  .section-04 h1 {
+    text-transform: uppercase;
+    color: var(--color4);
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+  }
+  .section-04 h1 span {
+    color: var(--color2);
+  }
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .custom-shape-divider-bottom-1708112799 {
+    position: absolute;
+    top: 99%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(360deg);
+  }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 500px;
+    padding: 15px 35px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
+  }
+  /* <--------------------------------Section 05 --------------------------> */
+  .outro h1 {
+    color: var(--color4);
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+  }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  /* <--------------------------------Section 01 --------------------------> */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+  }
+  .heroLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .heroLeft h1 {
+    color: var(--color4);
+    font-size: 90px;
+    font-weight: 900;
+  }
+  .heroLeft p {
+    color: var(--color4);
+    font-size: 20px;
+    font-weight: 900;
+  }
+  /* <--------------------------------Section 02 --------------------------> */
+
+  .imagechange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+  }
+  .imagechange img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 48px 48px -32px rgba(0, 0, 0, 0.2),
+      0 96px 96px -64px rgba(0, 0, 0, 0.4);
+  }
+  .imagechange .leftbuttons .button,
+  .rightbuttons .button {
+    display: none;
+  }
+  .horizontalButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  /* <--------------------------------Section 03 --------------------------> */
+  .section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color4);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .cardcontainer .card {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* <--------------------------------Section 04 --------------------------> */
+  .section-04 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 25px;
+    background-color: var(--color3);
+  }
+  .section-04 h1 {
+    text-transform: uppercase;
+
+    color: var(--color4);
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .section-04 h1 span {
+    color: var(--color2);
+  }
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .custom-shape-divider-bottom-1708112799 {
+    position: absolute;
+    top: 99.5%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(360deg);
+  }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 250px;
+    padding: 15px 15px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
+  }
+  /* <--------------------------------Section 05 --------------------------> */
+  .outro h1 {
+    color: var(--color4);
+    font-size: 50px;
+    font-weight: 900;
+  }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
+  }
+}
+@media (max-width: 556px) {
+  /* <--------------------------------Section 01 --------------------------> */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    gap: 25px;
+  }
+  .heroLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .heroLeft h1 {
+    color: var(--color4);
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .heroLeft p {
+    color: var(--color4);
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .heroRight img {
+    height: 300px;
+  }
+  /* <--------------------------------Section 02 --------------------------> */
+
+  .imagechange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+  .imagechange img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 48px 48px -32px rgba(0, 0, 0, 0.2),
+      0 96px 96px -64px rgba(0, 0, 0, 0.4);
+  }
+  .horizontalButtons .button {
+    font-size: 10px;
+    padding: 10px 5px;
+    margin: 0 20px;
+  }
+  .imagechange .leftbuttons .button,
+  .rightbuttons .button {
+    display: none;
+  }
+  .horizontalButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /* <--------------------------------Section 03 --------------------------> */
+  .section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color4);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .cardcontainer .card {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* <--------------------------------Section 04 --------------------------> */
+  .section-04 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 25px;
+    background-color: var(--color3);
+  }
+  .section-04 iframe {
+    width: 100%;
+  }
+  .section-04 h1 {
+    text-transform: uppercase;
+    color: var(--color4);
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .section-04 h1 span {
+    color: var(--color2);
+  }
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .custom-shape-divider-bottom-1708112799 {
+    position: absolute;
+    top: 99.5%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(360deg);
+  }
+  /* <--------------------------------Section 05 --------------------------> */
+  .outro h1 {
+    color: var(--color4);
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .section-02 {
+    height: 100%;
+  }
+  .section-02 .heading {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    gap: 25px;
+  }
+  .heroLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .heroLeft h1 {
+    color: var(--color4);
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .heroLeft p {
+    color: var(--color4);
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .heroRight img {
+    height: 250px;
+    margin-bottom: 50px;
+  }
+
+  .custom-shape-divider-bottom-1708106306 svg {
+    position: relative;
+    display: none;
+    width: calc(135% + 1.3px);
+    height: 120px;
+  }
+  .section-02 {
+    height: 100%;
+  }
+  .section-02 .heading {
+    margin-bottom: 100px;
+  }
+  .imagechange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .imagechange img {
+    border-radius: 20px;
+    box-shadow: 0 48px 48px -32px rgba(0, 0, 0, 0.2),
+      0 96px 96px -64px rgba(0, 0, 0, 0.4);
+  }
+  .imagechange .button {
+    font-size: 10px;
+    padding: 15px 10px;
+    width: 150px;
+  }
+  .imagechange .leftbuttons .button,
+  .rightbuttons .button {
+    display: none;
+  }
+  .horizontalButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--color4);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .cardcontainer .card {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  .section-04 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 25px;
+    background-color: var(--color3);
+  }
+  .section-04 iframe {
+    width: 100%;
+  }
+  .section-04 h1 {
+    text-transform: uppercase;
+
+    color: var(--color4);
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .section-04 h1 span {
+    color: var(--color2);
+  }
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .custom-shape-divider-bottom-1708112799 {
+    position: absolute;
+    top: 99.5%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(360deg);
+  }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 250px;
+    padding: 15px 15px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
+  }
+  /* <--------------------------------Section05-------------------------->  */
+  .section-05 {
+    object-fit: cover;
+    object-position: left;
+  }
+  .outro h1 {
+    color: var(--color4);
+    font-size: 50px;
+    font-weight: 900;
+  }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
+  }
+}
