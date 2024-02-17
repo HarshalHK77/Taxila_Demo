@@ -913,6 +913,7 @@ html::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-top: 25px;
     align-items: center;
   }
   .section-03 {
