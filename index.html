@@ -42,6 +42,40 @@
         </div>
       </div>
     </section>
+    <section class="about">
+      <h1 class="heading">About us</h1>
+      <div class="aboutSection">
+        <div class="aboutLeft">
+          <img src="./images/about.jpg" alt="" height="500px" />
+        </div>
+        <div class="aboutRight">
+          <h1>Elevate Your Business & Skills with Us:</h1>
+          <p>
+            Unlock the potential of your business with our comprehensive suite
+            of services, tailored to attract customers online and enhance your
+            online presence. From captivating content creation to expert virtual
+            assistants managing your digital channels, we provide the tools for
+            success.
+          </p>
+          <p>
+            Level up your skills with our personalized courses designed for
+            students, teachers, and business owners alike. Whether you're aiming
+            to boost productivity or enhance time management, our customized
+            approach ensures effective learning tailored to your needs.
+          </p>
+          <p>
+            Empower schools and institutions with our vast array of educational
+            materials and digital content, perfectly suited to meet specific
+            educational requirements.
+          </p>
+          <p>
+            At the heart of our approach lies customization, ensuring that
+            whether you're a startup or a leading institution, our services are
+            crafted to suit your unique needs and drive success.
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="section-02">
       <h1 class="heading">Our Services</h1>
       <div class="imagechange">
@@ -79,7 +113,7 @@
             <i class="ri-play-circle-line"></i> Business cards
           </button>
           <button class="button" onclick="changeImage('./images/7.jpg')">
-            <i class="ri-play-circle-line"></i> Flyers/Pamphlets 
+            <i class="ri-play-circle-line"></i> Flyers/Pamphlets
           </button>
           <button class="button" onclick="changeImage('./images/8.jpg')">
             <i class="ri-play-circle-line"></i> Invitation cards
@@ -108,7 +142,7 @@
             <i class="ri-play-circle-line"></i> Business cards
           </button>
           <button class="button" onclick="changeImage('./images/7.jpg')">
-            <i class="ri-play-circle-line"></i> Flyers/Pamphlets 
+            <i class="ri-play-circle-line"></i> Flyers/Pamphlets
           </button>
           <button class="button" onclick="changeImage('./images/8.jpg')">
             <i class="ri-play-circle-line"></i> Invitation cards
@@ -122,6 +156,7 @@
         </div>
       </div>
     </section>
+
     <section class="section-03">
       <div class="cardsection">
         <h1 class="heading">Business Development services</h1>
@@ -228,6 +263,11 @@
         interval: 100,
       });
       ScrollReveal().reveal(".rightbuttons", {
+        delay: 100,
+        origin: "right",
+        interval: 100,
+      });
+      ScrollReveal().reveal(".aboutSection", {
         delay: 100,
         origin: "right",
         interval: 100,

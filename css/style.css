@@ -143,7 +143,7 @@ html::-webkit-scrollbar-thumb {
   height: 50px;
   text-align: center;
   color: var(--color2);
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
 }
 .imagechange {
@@ -326,7 +326,49 @@ html::-webkit-scrollbar-thumb {
   font-size: 70px;
   font-weight: 900;
 }
+/* <--------------------------------About section --------------------------> */
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 100px;
+}
+.about .heading {
+  color: var(--color2);
+  font-size: 60px;
+  font-weight: 900;
+}
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  background: var(--color2);
+}
+.aboutSection .aboutRight {
+  padding: 0;
+  color: var(--color4);
+  text-align: left;
+}
+.aboutSection .aboutLeft img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.aboutSection .aboutRight h1 {
+  margin-bottom: 25px;
+}
+.aboutSection .aboutRight p {
+  margin-bottom: 25px;
+}
+.aboutSection .aboutLeft,
+.aboutRight {
+  max-width: 600px;
+}
 /* <--------------------------------Media queries --------------------------> */
 
 @media (max-width: 1024px) {
@@ -451,6 +493,42 @@ html::-webkit-scrollbar-thumb {
     font-weight: 900;
     text-align: center;
   }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   /* <--------------------------------Section 01 --------------------------> */
@@ -563,11 +641,70 @@ html::-webkit-scrollbar-thumb {
     line-height: 0;
     transform: rotate(360deg);
   }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 250px;
+    padding: 15px 15px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
+  }
   /* <--------------------------------Section 05 --------------------------> */
   .outro h1 {
     color: var(--color4);
     font-size: 50px;
     font-weight: 900;
+  }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
   }
 }
 @media (max-width: 556px) {
@@ -615,8 +752,8 @@ html::-webkit-scrollbar-thumb {
       0 96px 96px -64px rgba(0, 0, 0, 0.4);
   }
   .horizontalButtons .button {
-    font-size: 20px;
-    padding: 15px;
+    font-size: 10px;
+    padding: 10px 5px;
     margin: 0 20px;
   }
   .imagechange .leftbuttons .button,
@@ -667,7 +804,6 @@ html::-webkit-scrollbar-thumb {
   }
   .section-04 h1 {
     text-transform: uppercase;
-
     color: var(--color4);
     font-size: 40px;
     font-weight: 900;
@@ -700,9 +836,15 @@ html::-webkit-scrollbar-thumb {
     font-size: 50px;
     font-weight: 900;
   }
+  .section-02 {
+    height: 100%;
+  }
+  .section-02 .heading {
+    margin-bottom: 100px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .hero {
     display: flex;
     justify-content: center;
@@ -736,6 +878,12 @@ html::-webkit-scrollbar-thumb {
     width: calc(135% + 1.3px);
     height: 120px;
   }
+  .section-02 {
+    height: 100%;
+  }
+  .section-02 .heading {
+    margin-bottom: 100px;
+  }
   .imagechange {
     display: flex;
     justify-content: center;
@@ -750,8 +898,9 @@ html::-webkit-scrollbar-thumb {
       0 96px 96px -64px rgba(0, 0, 0, 0.4);
   }
   .imagechange .button {
-    font-size: 15px;
-    padding: 15px 20px;
+    font-size: 10px;
+    padding: 15px 10px;
+    width: 150px;
   }
   .imagechange .leftbuttons .button,
   .rightbuttons .button {
@@ -760,7 +909,7 @@ html::-webkit-scrollbar-thumb {
   .horizontalButtons {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
@@ -826,14 +975,72 @@ html::-webkit-scrollbar-thumb {
     line-height: 0;
     transform: rotate(360deg);
   }
+  .form-container form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: var(--color1);
+    border: 0.1px solid var(--color3);
+  }
+  .form-container form .inputBox i {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .form-container form .inputBox input {
+    min-width: 250px;
+    padding: 15px 15px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    margin-left: 15px;
+  }
   /* <--------------------------------Section05-------------------------->  */
   .section-05 {
-    object-fit: contain;
+    object-fit: cover;
     object-position: left;
   }
   .outro h1 {
     color: var(--color4);
     font-size: 50px;
     font-weight: 900;
+  }
+  /* <--------------------------------About section --------------------------> */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .about .heading {
+    color: var(--color2);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 50px;
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color2);
+  }
+  .aboutSection .aboutLeft img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  .aboutSection .aboutLeft,
+  .aboutRight {
+    width: 100%;
   }
 }
