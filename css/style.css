@@ -360,10 +360,12 @@ html::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .aboutSection .aboutRight h1 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding: 0 18px;
 }
 .aboutSection .aboutRight p {
   margin-bottom: 25px;
+  padding: 0 18px;
 }
 .aboutSection .aboutLeft,
 .aboutRight {
